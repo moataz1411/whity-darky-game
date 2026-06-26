@@ -3,21 +3,16 @@ extends CharacterBody2D
 const SPEED = 120.0
 const JUMP_VELOCITY = -250.0
 
-const MAX_JUMPS=2
-var jumps_left=MAX_JUMPS
-
 func _physics_process(delta: float) -> void:
 
 	if not is_on_floor():
-		velocity += get_gravity() * delta
-	else:
-		jumps_left=MAX_JUMPS
+		velocity.y += get_gravity().y * delta
 
-	if Input.is_action_just_pressed("up") and jumps_left > 0:
+	if Input.is_action_just_pressed("up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		jumps_left -= 1
 
 	var direction := Input.get_axis("left", "right")
+
 	if direction:
 		velocity.x = direction * SPEED
 		$AnimatedSprite2D.flip_h = direction < 0
