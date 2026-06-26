@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clj0dealwfx0s"]
+
+[ext_resource type="AudioStream" uid="uid://d06cwxrm8knte" path="res://musics/Coin Pop.mp3" id="1_g3uqh"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_g3uqh")
+autoplay = true
+bus = &"music"
