@@ -286,6 +286,14 @@ text = "Forward -> D
 Back -> A
 Space to Jump"
 
+[node name="Label4" type="Label" parent="labels"]
+offset_left = 347.0
+offset_top = -199.0
+offset_right = 519.0
+offset_bottom = -145.0
+theme_override_fonts/font = ExtResource("9_xoyoh")
+text = "Level 1"
+
 [node name="Label3" type="Label" parent="labels"]
 offset_left = 795.0
 offset_top = -204.0
