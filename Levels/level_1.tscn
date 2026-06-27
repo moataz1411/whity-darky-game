@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://dgayo5y1q2uaf"]
+[gd_scene load_steps=26 format=4 uid="uid://dgayo5y1q2uaf"]
 
 [ext_resource type="TileSet" uid="uid://o0ejl3gclcxb" path="res://Levels/tile-sets/1 bit platformer.tres" id="1_3mhv4"]
 [ext_resource type="Script" uid="uid://rrfv4qswd76d" path="res://Levels/game_manager.gd" id="1_f4pg2"]
@@ -125,6 +125,20 @@ _data = {
 &"move": SubResource("Animation_syshm"),
 &"moving": SubResource("Animation_0urlm")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2hkqn"]
+bg_color = Color(0.00566115, 0.0056611523, 0.005661145, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_34erp"]
+bg_color = Color(0.025363795, 0.025363805, 0.02536378, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="level1" type="Node2D"]
 script = ExtResource("1_lk57d")
@@ -319,36 +333,57 @@ text = "I think you should avoid the enemies. 😉"
 position = Vector2(334, -367)
 
 [node name="pause menu" type="CanvasLayer" parent="."]
-visible = false
 script = ExtResource("13_2hkqn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="pause menu"]
 anchors_preset = -1
 anchor_right = 0.035
 anchor_bottom = 0.062000003
-offset_left = 546.0
-offset_top = 301.0
-offset_right = 545.68
-offset_bottom = 300.824
+offset_left = 503.0
+offset_top = 74.0
+offset_right = 735.68
+offset_bottom = 326.824
 theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="pause menu/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9607843, 0.24705882, 1)
 theme_override_fonts/font = ExtResource("14_34erp")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 60
 text = "Paused Menu"
 
 [node name="Button" type="Button" parent="pause menu/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.7674583, 0.3684173, 0.2350592, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
 theme_override_fonts/font = ExtResource("14_34erp")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_2hkqn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_34erp")
 text = "Resume"
 
 [node name="Button2" type="Button" parent="pause menu/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.36862746, 0.23529412, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
 theme_override_fonts/font = ExtResource("14_34erp")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_2hkqn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_34erp")
 text = "Settings"
 
 [node name="Button3" type="Button" parent="pause menu/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.36862746, 0.23529412, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
 theme_override_fonts/font = ExtResource("14_34erp")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_2hkqn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_34erp")
 text = "Quit"
