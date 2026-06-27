@@ -1,7 +1,6 @@
 extends Area2D
 
 
-var scene=1
 func _ready() -> void:
 	pass # Replace with function body.
 
@@ -12,4 +11,7 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Levels/level_" + str(scene) + ".tscn")
+	
+	Global.scene+=1
+	get_tree().change_scene_to_file("res://Levels/level_" + str(Global.scene) + ".tscn")
+	
