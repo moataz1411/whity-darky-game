@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 var pause_toggle = false
 
