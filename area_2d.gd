@@ -1,17 +1,10 @@
 extends Area2D
 
+func _on_body_entered(body):
+	if body is CharacterBody2D:
+		Global.scene += 1
 
-func _ready() -> void:
-	pass # Replace with function body.
+		if Global.scene > 4:
+			Global.scene = 1
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _on_body_entered(body: Node2D) -> void:
-	
-	Global.scene+=1
-	get_tree().change_scene_to_file("res://Levels/level_" + str(Global.scene) + ".tscn")
-	
+		get_tree().change_scene_to_file("res://Levels/level_" + str(Global.scene) + ".tscn")
