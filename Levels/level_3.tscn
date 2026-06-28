@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://bwki5q0qqjdql"]
+[gd_scene load_steps=32 format=4 uid="uid://bwki5q0qqjdql"]
 
 [ext_resource type="Script" uid="uid://rrfv4qswd76d" path="res://Levels/game_manager.gd" id="1_trpa2"]
 [ext_resource type="FontFile" uid="uid://tc7plarqhole" path="res://art/PixelOperator8.ttf" id="2_4t7ew"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bbs5updo5du8g" path="res://art/coin.tscn" id="9_1yi2b"]
 [ext_resource type="PackedScene" uid="uid://fuki2andda60" path="res://art/enemies.tscn" id="10_462h2"]
 [ext_resource type="PackedScene" uid="uid://dve77jjnmu4e" path="res://art/area_2d.tscn" id="11_4t7ew"]
+[ext_resource type="Script" uid="uid://dxya2bg0ry44o" path="res://Levels/pause_menu.gd" id="12_7cdb2"]
+[ext_resource type="FontFile" uid="uid://coqplxci5qvx5" path="res://art/Watermelon Sugar.ttf" id="13_2urlj"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_77x7w"]
 distance = 57.0
@@ -28,6 +30,54 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(1174, -233)]
+}
+
+[sub_resource type="Animation" id="Animation_88iqf"]
+resource_name = "five"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.98),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1428, -229), Vector2(1429, -180)]
+}
+
+[sub_resource type="Animation" id="Animation_2urlj"]
+resource_name = "four"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1354, -233), Vector2(1358, -170)]
+}
+
+[sub_resource type="Animation" id="Animation_trpa2"]
+resource_name = "hiphub"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(492, -148), Vector2(492, -185)]
 }
 
 [sub_resource type="Animation" id="Animation_syshm"]
@@ -62,54 +112,6 @@ tracks/0/keys = {
 "values": [Vector2(1174, -233), Vector2(1085, -233)]
 }
 
-[sub_resource type="Animation" id="Animation_1soli"]
-resource_name = "popopo"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1736, -189), Vector2(1862, -193)]
-}
-
-[sub_resource type="Animation" id="Animation_qeqk5"]
-resource_name = "toptop"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1629, -188), Vector2(1695, -236)]
-}
-
-[sub_resource type="Animation" id="Animation_trpa2"]
-resource_name = "hiphub"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(492, -148), Vector2(492, -185)]
-}
-
 [sub_resource type="Animation" id="Animation_4t7ew"]
 resource_name = "one"
 loop_mode = 2
@@ -126,24 +128,8 @@ tracks/0/keys = {
 "values": [Vector2(1138, -239), Vector2(1141, -144)]
 }
 
-[sub_resource type="Animation" id="Animation_oojpf"]
-resource_name = "two"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1210, -234), Vector2(1214, -167)]
-}
-
-[sub_resource type="Animation" id="Animation_7cdb2"]
-resource_name = "three"
+[sub_resource type="Animation" id="Animation_1soli"]
+resource_name = "popopo"
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -155,39 +141,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1282, -236), Vector2(1287, -164)]
-}
-
-[sub_resource type="Animation" id="Animation_2urlj"]
-resource_name = "four"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1354, -233), Vector2(1358, -170)]
-}
-
-[sub_resource type="Animation" id="Animation_88iqf"]
-resource_name = "five"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.98),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1428, -229), Vector2(1429, -180)]
+"values": [Vector2(1736, -189), Vector2(1862, -193)]
 }
 
 [sub_resource type="Animation" id="Animation_5wr1k"]
@@ -206,6 +160,54 @@ tracks/0/keys = {
 "values": [Vector2(2626, -170), Vector2(2719, -220)]
 }
 
+[sub_resource type="Animation" id="Animation_7cdb2"]
+resource_name = "three"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1282, -236), Vector2(1287, -164)]
+}
+
+[sub_resource type="Animation" id="Animation_qeqk5"]
+resource_name = "toptop"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1629, -188), Vector2(1695, -236)]
+}
+
+[sub_resource type="Animation" id="Animation_oojpf"]
+resource_name = "two"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1210, -234), Vector2(1214, -167)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0urlm"]
 _data = {
 &"RESET": SubResource("Animation_rfktq"),
@@ -221,6 +223,34 @@ _data = {
 &"toptop": SubResource("Animation_qeqk5"),
 &"two": SubResource("Animation_oojpf")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88iqf"]
+bg_color = Color(0.00566115, 0.0056611523, 0.005661145, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wr1k"]
+bg_color = Color(0.91228896, 0.9122889, 0.91228884, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtqdv"]
+bg_color = Color(0.025363795, 0.025363805, 0.02536378, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1yi2b"]
+bg_color = Color(0.96474224, 0.96474224, 0.9647421, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="level1" type="Node2D"]
 
@@ -420,3 +450,68 @@ text = "Level 3"
 
 [node name="Area2D" parent="." instance=ExtResource("11_4t7ew")]
 position = Vector2(3071, -190)
+
+[node name="pause menu" type="CanvasLayer" parent="."]
+script = ExtResource("12_7cdb2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pause menu"]
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.062000003
+offset_left = 425.0
+offset_top = 99.0
+offset_right = 657.68
+offset_bottom = 351.824
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="pause menu/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9607843, 0.24705882, 1)
+theme_override_fonts/font = ExtResource("13_2urlj")
+theme_override_font_sizes/font_size = 60
+text = "Paused Menu"
+
+[node name="Button" type="Button" parent="pause menu/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7674583, 0.3684173, 0.2350592, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
+theme_override_fonts/font = ExtResource("13_2urlj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_88iqf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5wr1k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wtqdv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1yi2b")
+text = "Resume"
+
+[node name="Button2" type="Button" parent="pause menu/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.36862746, 0.23529412, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
+theme_override_fonts/font = ExtResource("13_2urlj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_88iqf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wtqdv")
+text = "restart"
+
+[node name="Button3" type="Button" parent="pause menu/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0.76862746, 0.36862746, 0.23529412, 1)
+theme_override_colors/font_focus_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+theme_override_colors/font_pressed_color = Color(0.14901961, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.6225401, 0.4764142, 0.17809695, 1)
+theme_override_fonts/font = ExtResource("13_2urlj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_88iqf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wtqdv")
+text = "Quit to Main Menu"
+
+[connection signal="pressed" from="pause menu/VBoxContainer/Button" to="pause menu" method="_on_button_pressed"]
+[connection signal="pressed" from="pause menu/VBoxContainer/Button2" to="pause menu" method="_on_button_2_pressed"]
+[connection signal="pressed" from="pause menu/VBoxContainer/Button3" to="pause menu" method="_on_button_3_pressed"]

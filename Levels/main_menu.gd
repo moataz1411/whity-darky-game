@@ -32,3 +32,8 @@ func _on_exit_pressed() -> void:
 
 func _on_back_pressed() -> void:
 	_ready()
+
+
+func _on_continue_pressed() -> void:
+	if GameState.last_scene_path != "":
+		get_tree().change_scene_to_file(GameState.last_scene_path)

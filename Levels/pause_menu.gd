@@ -27,6 +27,7 @@ func _on_button_2_pressed() -> void:
 
 
 func _on_button_3_pressed() -> void:
-	get_tree().paused=false
-	pause_toggle=false
+	GameState.last_scene_path = get_tree().current_scene.scene_file_path
+	get_tree().paused = false
+	pause_toggle = false
 	get_tree().change_scene_to_file("res://Levels/main_menu.tscn")

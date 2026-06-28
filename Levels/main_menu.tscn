@@ -98,6 +98,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_3es34")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jy27m")
 text = "Start Game"
 
+[node name="continue" type="Button" parent="mainbuttons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_351dl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jy27m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3es34")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jy27m")
+text = "continue"
+
 [node name="Button2" type="Button" parent="mainbuttons"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -272,6 +286,7 @@ popup/item_3/id = 3
 script = ExtResource("6_5qvx8")
 
 [connection signal="pressed" from="mainbuttons/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="mainbuttons/continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="mainbuttons/Button2" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="mainbuttons/Button3" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="options/Label/back" to="." method="_on_back_pressed"]
