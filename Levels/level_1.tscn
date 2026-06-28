@@ -1,7 +1,6 @@
-[gd_scene load_steps=28 format=4 uid="uid://dgayo5y1q2uaf"]
+[gd_scene load_steps=27 format=4 uid="uid://dgayo5y1q2uaf"]
 
 [ext_resource type="TileSet" uid="uid://o0ejl3gclcxb" path="res://Levels/tile-sets/1 bit platformer.tres" id="1_3mhv4"]
-[ext_resource type="Script" uid="uid://rrfv4qswd76d" path="res://Levels/game_manager.gd" id="1_f4pg2"]
 [ext_resource type="Script" uid="uid://qcybvk3wd8qx" path="res://Levels/level_1.gd" id="1_lk57d"]
 [ext_resource type="Texture2D" uid="uid://7bu1vqwjvxv" path="res://art/Image.png" id="1_rf6l5"]
 [ext_resource type="PackedScene" uid="uid://c1v25kxeo4fm6" path="res://characters/Players/player.tscn" id="2_rf6l5"]
@@ -156,20 +155,6 @@ corner_radius_bottom_left = 20
 
 [node name="level1" type="Node2D"]
 script = ExtResource("1_lk57d")
-
-[node name="gamemanager" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_f4pg2")
-
-[node name="mainlabel" type="Label" parent="gamemanager"]
-offset_left = 402.0
-offset_top = -447.0
-offset_right = 754.0
-offset_bottom = -393.0
-theme_override_fonts/font = ExtResource("9_xoyoh")
-text = "		Congratulations!!!
-
-U Collected x out of 12 coins"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(378, -176)

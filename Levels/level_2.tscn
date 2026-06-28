@@ -1,6 +1,5 @@
-[gd_scene load_steps=30 format=4 uid="uid://b2llaqaxfttid"]
+[gd_scene load_steps=29 format=4 uid="uid://b2llaqaxfttid"]
 
-[ext_resource type="Script" uid="uid://rrfv4qswd76d" path="res://Levels/game_manager.gd" id="1_1soli"]
 [ext_resource type="FontFile" uid="uid://tc7plarqhole" path="res://art/PixelOperator8.ttf" id="2_4pbjs"]
 [ext_resource type="Texture2D" uid="uid://7bu1vqwjvxv" path="res://art/Image.png" id="3_lmqi1"]
 [ext_resource type="TileSet" uid="uid://o0ejl3gclcxb" path="res://Levels/tile-sets/1 bit platformer.tres" id="4_5yfph"]
@@ -205,20 +204,6 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [node name="level1" type="Node2D"]
-
-[node name="gamemanager" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_1soli")
-
-[node name="mainlabel" type="Label" parent="gamemanager"]
-offset_left = 2692.0
-offset_top = -322.0
-offset_right = 3044.0
-offset_bottom = -268.0
-theme_override_fonts/font = ExtResource("2_4pbjs")
-text = "		Congratulations!!!
-
-U Collected x out of 12 coins"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1397.625, -138)
