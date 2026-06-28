@@ -98,20 +98,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_3es34")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jy27m")
 text = "Start Game"
 
-[node name="continue" type="Button" parent="mainbuttons"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 36
-theme_override_styles/normal = SubResource("StyleBoxFlat_351dl")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_jy27m")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3es34")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_jy27m")
-text = "continue"
-
 [node name="Button2" type="Button" parent="mainbuttons"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -159,6 +145,55 @@ theme_override_constants/shadow_offset_y = 20
 theme_override_fonts/font = ExtResource("3_jkn2u")
 theme_override_font_sizes/font_size = 110
 text = "Whity - Darky"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -735.0
+offset_top = 56.99997
+offset_right = -32.0
+offset_bottom = 180.99997
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.52412623
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/font = ExtResource("3_jkn2u")
+theme_override_font_sizes/font_size = 60
+text = "Congratulations !!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 96.0
+offset_top = -258.0
+offset_right = 567.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.010814369
+theme_override_colors/font_color = Color(0.9529412, 0, 0.6901961, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/font = ExtResource("3_jkn2u")
+theme_override_font_sizes/font_size = 60
+text = "Thanks for playing my
+ game; I hope you 
+enjoyed it."
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -286,7 +321,6 @@ popup/item_3/id = 3
 script = ExtResource("6_xfs1c")
 
 [connection signal="pressed" from="mainbuttons/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="mainbuttons/continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="mainbuttons/Button2" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="mainbuttons/Button3" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="options/Label/back" to="." method="_on_back_pressed"]
