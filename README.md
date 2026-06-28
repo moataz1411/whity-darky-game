@@ -18,6 +18,7 @@ As you progress, every level becomes more challenging with tougher platforming s
 - Avoid  the enemies
 - open doors to go to the next level
 - get ur lost treasure
+- **u can make it fullscreen in options in main menu**
 
 ---
 
