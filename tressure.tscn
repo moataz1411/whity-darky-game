@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://otspddrvnxtp"]
+
+[ext_resource type="Texture2D" uid="uid://xqfidvvi0wcx" path="res://art/monochrome_tilemap_transparent_packed.png" id="1_w43wq"]
+[ext_resource type="AudioStream" uid="uid://qs46dp4g6hpb" path="res://musics/freesound_community-short-success-sound-glockenspiel-treasure-video-game-6346.mp3" id="2_hp0hu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkckx"]
+atlas = ExtResource("1_w43wq")
+region = Rect2(144, 304, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_24wlg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkckx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dp1jg"]
+size = Vector2(18, 19)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_24wlg")
+frame_progress = 0.70826304
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_dp1jg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_hp0hu")

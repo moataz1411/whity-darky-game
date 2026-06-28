@@ -1,9 +1,11 @@
 extends Area2D
-@onready var animation_player = $AnimationPlayer
+
+@export var next_scene: String = "res://Levels/main_menu2.tscn"
 
 func _on_body_entered(body: Node2D) -> void:
 	print(body.name)
 
 	if body.name != "Player":
 		return
-	animation_player.play("pickup")
+
+	get_tree().change_scene_to_file(next_scene)
