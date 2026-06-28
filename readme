@@ -1,0 +1,69 @@
+**Whity-Darky**
+
+Follow and collect the coins to get ur lost treasure
+
+---
+
+**About the Game**
+
+**Whity-Darky** is a 2D platformer built with Godot Engine where every scattered coin leads you to be closer ti ur treasure.
+
+As you progress, every level becomes more challenging with tougher platforming sections and enemies.
+
+---
+**how to play**
+
+- Follow the coins.
+- Jump across platforms and gaps.
+- Avoid  the enemies
+- open doors to go to the next level
+- get ur lost treasure
+
+---
+
+**Levels**
+--
+The game consists of four levels of increasing difficulty.
+There is also a fifth level which is the paradise path to ur lost treasure.
+
+**Level 1 map**
+
+
+
+
+**Difficulty:** ⭐☆☆☆
+
+---
+
+### 🟡 Level 2 – Dangerous Path
+Enemies begin to appear, forcing players to carefully plan their movements while following the trail.
+
+**Difficulty:** ⭐⭐☆☆
+
+---
+
+### 🟠 Level 3 – Hidden Journey
+The path becomes longer, jumps become harder, and enemies make reaching the treasure much more challenging.
+
+**Difficulty:** ⭐⭐⭐☆
+
+---
+
+### 🔴 Final Level – Treasure Master
+The ultimate challenge where every mechanic comes together. Precision, patience, and quick reactions are the key to claiming the final treasure.
+
+**Difficulty:** ⭐⭐⭐⭐
+
+---
+
+**Controls**
+
+|------|--------|
+| A or ← | Move Left |
+| D or → | Move Right |
+| Space | Jump |
+| Esc | Pause |
+
+---
+
+**Build with**
