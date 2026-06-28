@@ -59,8 +59,11 @@ There is also a fifth level which is the paradise path to ur lost treasure.
 **Controls**
 
 A or ← : Move Left 
+
 D or → : Move Right 
+
 Space : Jump 
+
 Esc : Pause 
 
 ---
