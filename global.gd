@@ -1,3 +1,4 @@
 extends Node
 
-var scene=1
+var current_level = 1
+const MAX_LEVEL = 5
