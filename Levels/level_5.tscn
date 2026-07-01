@@ -145,7 +145,7 @@ position = Vector2(536, -343)
 position = Vector2(1177, -154)
 
 [node name="Area2D" parent="coins" instance=ExtResource("9_m47b0")]
-position = Vector2(2362, -160)
+position = Vector2(2361, -162)
 scale = Vector2(2, 2)
 script = ExtResource("10_x7gsr")
 
