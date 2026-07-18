@@ -206,8 +206,8 @@ corner_radius_bottom_left = 20
 [node name="level1" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1397.625, -138)
-scale = Vector2(1.6794355, 1.9625)
+position = Vector2(1397.0001, -136.125)
+scale = Vector2(1.6794355, 1.9395832)
 texture = ExtResource("3_lmqi1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -216,7 +216,7 @@ scale = Vector2(1.7201612, 1.961111)
 texture = ExtResource("3_lmqi1")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(2620, -137)
+position = Vector2(2615.0002, -140)
 scale = Vector2(2.2637098, 1.9722223)
 texture = ExtResource("3_lmqi1")
 
@@ -350,7 +350,6 @@ offset_top = -267.0
 offset_right = 923.0
 offset_bottom = -213.0
 theme_override_fonts/font = ExtResource("2_4pbjs")
-text = "Dont Fall, bro"
 
 [node name="Label2" type="Label" parent="labels"]
 offset_left = 394.0
@@ -359,7 +358,7 @@ offset_right = 699.0
 offset_bottom = -189.0
 theme_override_fonts/font = ExtResource("2_4pbjs")
 theme_override_font_sizes/font_size = 15
-text = "dont fall again, sweetie"
+text = "dont fall again!!!"
 
 [node name="Area2D" parent="." instance=ExtResource("11_qeqk5")]
 position = Vector2(3071, -239)

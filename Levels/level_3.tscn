@@ -254,17 +254,17 @@ corner_radius_bottom_left = 20
 [node name="level1" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1397.625, -138)
+position = Vector2(1401.625, -139)
 scale = Vector2(1.6794355, 1.9625)
 texture = ExtResource("3_oojpf")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(346.24997, -138)
+position = Vector2(346.25, -139)
 scale = Vector2(1.7201612, 1.961111)
 texture = ExtResource("3_oojpf")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(2620, -137)
+position = Vector2(2618, -141.00002)
 scale = Vector2(2.2637098, 1.9722223)
 texture = ExtResource("3_oojpf")
 

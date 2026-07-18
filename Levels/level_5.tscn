@@ -55,7 +55,7 @@ scale = Vector2(1.7201612, 1.961111)
 texture = ExtResource("3_m47b0")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(2620, -137)
+position = Vector2(2620, -140)
 scale = Vector2(2.2637098, 1.9722223)
 texture = ExtResource("3_m47b0")
 
@@ -185,7 +185,7 @@ offset_right = 2230.0
 offset_bottom = -163.0
 theme_override_fonts/font = ExtResource("13_x7gsr")
 theme_override_font_sizes/font_size = 20
-text = "Shit!! U Find it "
+text = "ooooh! U Find it "
 
 [node name="Label4" type="Label" parent="labels"]
 offset_left = 1434.0
